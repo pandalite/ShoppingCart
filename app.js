@@ -28,7 +28,7 @@ const orderRoutes = require('./routes/order');
 const productApis = require('./routes/api/productapi');
 
 
-const dbUrl = process.env.dbUrl || 'mongodb://localhost:27017/shopping-app'
+const dbUrl = process.env.dbUrl || 'mongodb://127.0.0.1:27017/shopping-app'
 
 mongoose.connect(dbUrl)
     .then(() => console.log('DB Connected'))

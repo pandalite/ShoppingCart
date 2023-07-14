@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Product = require('./models/product');
 
 
-mongoose.connect('mongodb://localhost:27017/shopping-app')
+mongoose.connect('mongodb://127.0.0.1:27017/shopping-app')
     .then(() => console.log('DB Connected'))
     .catch((err) => console.log(err));
 
@@ -61,4 +61,4 @@ async function seedDB(){
     console.log('Product Seeded');
 }
 
-seedDB();
+//seedDB();
